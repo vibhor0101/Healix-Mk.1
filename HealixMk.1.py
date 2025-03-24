@@ -4,7 +4,7 @@ import google.generativeai as genai
 from dotenv import load_dotenv
 
 load_dotenv()
-API_KEY = os.getenv("BAY_BOT_API_KEY")
+API_KEY = os.getenv("Healix_Mk1_API_KEY")
 
 if API_KEY is None:
     raise ValueError("API Key not found. Ensure it's set in the .env file.")
