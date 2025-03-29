@@ -31,8 +31,8 @@ def service_menu_return():
         sarcastic_retry_for_service_menu_RETURN()
         
 
-def BayBot_greeting():
-    baymax_face = """
+def Healix_greeting():
+    healix_face = """
     ██        ██  
   ████████████████  
  ██████████████████ 
@@ -42,7 +42,7 @@ def BayBot_greeting():
   ████████████████ 
     ██        ██  
 """
-    print(baymax_face)
+    print(healix_face)
     time.sleep(0.75)
     print("Hello!")
     time.sleep(0.5)
@@ -57,7 +57,7 @@ def BayBot_greeting():
     elif first_question == "no":
         No_service()
     else:
-        sarcastic_retry_for_BAYBOT_greeting()
+        sarcastic_retry_for_Healix_greeting()
 
 def No_service():
     print("If you ever need assistance, I'm always here to help! 😊 Stay healthy! 💙\n")
@@ -65,7 +65,7 @@ def No_service():
     first_question_again = input("Would you like to restart Healix Mk.1? (yes/no) ").casefold().strip()
     if first_question_again == "yes":
         loading_animation()
-        BayBot_greeting()
+        Healix_greeting()
     elif first_question_again == "no":
         print("Ok, take care!")
     else:
@@ -139,11 +139,11 @@ def sarcastic_retry_for_service_menu_RETURN():
     wrong_attempts += 1  
     service_menu_return()
 
-def sarcastic_retry_for_BAYBOT_greeting():
+def sarcastic_retry_for_Healix_greeting():
     global wrong_attempts
     print("\n" + sarcastic_responses[wrong_attempts % len(sarcastic_responses)] + "\n")
     wrong_attempts += 1  
-    BayBot_greeting()
+    Healix_greeting()
 
 def sarcastic_retry_for_service_type_menu():
     global wrong_attempts
