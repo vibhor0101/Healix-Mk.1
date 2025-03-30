@@ -26,7 +26,7 @@
    ```
 4. Set up your `.env` file and add your **API key**:
    ```
-   BAY_BOT_API_KEY=your_api_key_here
+   Healix_Mk1_API_KEY="YOUR API KEY HERE"
    ```
 5. Run the program:
    ```sh
