@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Healix Mk.1 — Health guidance</title>
+  <meta name="description" content="Healix Mk.1 is an AI health assistant for symptoms, first aid, medication context, emergency contacts, mental health, and nutrition. Not a substitute for professional care.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">H</span>
+      <p>
+        <strong>Healix Mk.1</strong>
+        <span>Health guidance, in one place</span>
+      </p>
+    </div>
+    <p class="disclaimer" role="note">
+      Not a substitute for professional care. For emergencies, use local emergency services.
+    </p>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-heading">
+      <h1 id="hero-heading">What do you need help with?</h1>
+      <p>Choose a service. Healix asks one focused question, then returns a short answer you can act on.</p>
+    </section>
+
+    <form class="healix-form" action="#" method="post">
+      <fieldset class="service-grid">
+        <legend>Healix services</legend>
+
+        <div class="service-option">
+          <input type="radio" id="service-symptom" name="service" value="symptom" checked>
+          <label for="service-symptom">
+            <strong>Symptom checker</strong>
+            <span>Possible causes and first steps</span>
+          </label>
+        </div>
+
+        <div class="service-option">
+          <input type="radio" id="service-firstaid" name="service" value="firstaid">
+          <label for="service-firstaid">
+            <strong>First aid</strong>
+            <span>Immediate care for injuries</span>
+          </label>
+        </div>
+
+        <div class="service-option">
+          <input type="radio" id="service-meds" name="service" value="meds">
+          <label for="service-meds">
+            <strong>Medication guide</strong>
+            <span>Usage context, not a prescription</span>
+          </label>
+        </div>
+
+        <div class="service-option">
+          <input type="radio" id="service-emergency" name="service" value="emergency">
+          <label for="service-emergency">
+            <strong>Emergency contacts</strong>
+            <span>Numbers by country and need</span>
+          </label>
+        </div>
+
+        <div class="service-option">
+          <input type="radio" id="service-mental" name="service" value="mental">
+          <label for="service-mental">
+            <strong>Mental health</strong>
+            <span>Coping ideas and next steps</span>
+          </label>
+        </div>
+
+        <div class="service-option">
+          <input type="radio" id="service-diet" name="service" value="diet">
+          <label for="service-diet">
+            <strong>Diet and nutrition</strong>
+            <span>Food plans matched to your goals</span>
+          </label>
+        </div>
+
+        <div class="service-option">
+          <input type="radio" id="service-other" name="service" value="other">
+          <label for="service-other">
+            <strong>Other questions</strong>
+            <span>Anything else health-related</span>
+          </label>
+        </div>
+      </fieldset>
+
+      <section class="panel consult" aria-labelledby="consult-heading">
+        <h2 id="consult-heading">Your question</h2>
+        <p class="hint">Describe the situation in plain language. Include when it started, if that helps.</p>
+
+        <label for="query">Your description</label>
+        <textarea id="query" name="query" rows="5" required placeholder="Sore throat, mild fever since yesterday, no trouble breathing"></textarea>
+
+        <div class="actions">
+          <button class="btn btn-primary" type="submit">Ask Healix</button>
+          <button class="btn btn-ghost" type="reset">Clear</button>
+        </div>
+      </section>
+    </form>
+
+    <section class="panel guidance" aria-labelledby="guidance-heading">
+      <h2 id="guidance-heading">Guidance</h2>
+      <p>Answers will appear here after you submit a question.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Healix Mk.1 answers are brief AI guidance. Always confirm serious symptoms with a clinician.</p>
+  </footer>
+</body>
+</html>
